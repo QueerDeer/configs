@@ -126,3 +126,15 @@ fi
 
 #fix slowdown after suspend
 alias fuck='sudo modprobe msr && sudo rdmsr -a 0x19a'
+
+#fix wifi module
+alias poke='sudo systemctl restart network-manager'
+
+export PATH="/usr/lib/ccache:$PATH"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/:/usr/lib/:/home/groenendael/Projects/meteo/debug/:home/groenendael/Projects/meteo/release
+export PATH=/home/groenendael/cling_2018-03-20_ubuntu16/bin:$PATH
+export PATH=/home/groenendael/Qt/5.9.4/gcc_64/bin:$PATH
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
